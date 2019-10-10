@@ -15,7 +15,7 @@
     (/ (- (g (+ x dx)) (g x))
        dx)))
 
-(define dx 0.000000001)
+(define dx 0.0000000000001)
 
 (define (newton-transform g)
   (lambda (x)
