@@ -10,7 +10,8 @@
 
 (define (square-tree-map tree)
   (map (lambda (subtree)
-         (if (pair? subtree) (square-tree-map subtree)
+         (if (pair? subtree)
+             (square-tree-map subtree)
              (square subtree)))
        tree))
 
